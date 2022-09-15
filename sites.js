@@ -29,4 +29,4 @@ function generateSites() {
 
 let dataObj = generateSites();
 
-fs.writeFileSync("campsites.js", JSON.stringify(dataObj, null, "\t"));
+fs.writeFileSync("./dist/campsites.js", JSON.stringify(dataObj, null, "\t"));

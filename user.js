@@ -19,20 +19,10 @@ function generateUsers() {
       "password": password,
     });
   }
-  return { data: users };
+  return users;
 }
 
 let dataObj = generateUsers();
 
-fs.writeFileSync("users.json", JSON.stringify(dataObj, null, "\t"));
+fs.writeFileSync("./dist/users.js", JSON.stringify(dataObj, null, "\t"));
 
-// let firstName = faker.name.firstName();
-// let lastName = faker.name.lastName();
-// let email = faker.internet.email();
-// let phone = faker.phone.number();
-// let password = faker.internet.password();
-// let prefix = faker.name.prefix();
-// let suffix = faker.name.suffix();
-// console.log(
-//     `User: ${prefix} ${firstName} ${lastName} ${email} ${phone} ${password} ${suffix}`
-//   );
