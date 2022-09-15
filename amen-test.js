@@ -7,16 +7,16 @@ function generateSites() {
     let name = faker.address.city();
     let location = faker.address.streetAddress();
     let description = faker.lorem.sentence(5);
-    let rate = faker.finance.amount(1,50,0);
+    let price = faker.finance.amount(1,50,0);
 
     sites.push({
       "name": name,
       "location": location,
       "description": description,
-      "rate": rate,
+      "price": rate,
     });
   }
-  return { data: sites };
+  return { sites };
 }
 
 let dataObj = generateSites();
