@@ -16,7 +16,7 @@ function generateSites() {
       "price": rate,
     });
   }
-  return { sites };
+  return { data: sites };
 }
 
 let dataObj = generateSites();
