@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import fs from "fs";
-import genAmenitiy from "./gen-amenity.js";
-import genActivity from "./gen-activity.js";
+import genAmenitiy from "./utils/gen-amenity.js";
+import genActivity from "./utils/gen-activity.js";
 
 
 function generateSites() {
