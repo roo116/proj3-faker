@@ -2,6 +2,7 @@ import { faker } from "@faker-js/faker";
 import fs from "fs";
 import genAmenitiy from "./utils/gen-amenity.js";
 import genActivity from "./utils/gen-activity.js";
+import genTerrain from "./utils/gen-terrain.js";
 
 
 function generateSites() {
@@ -14,6 +15,7 @@ function generateSites() {
     let price = faker.finance.amount(1,50,0);
     let amenities = genAmenitiy();
     let activities = genActivity();
+    let terrain = genTerrain();
 
     sites.push({
       "name": name,
@@ -22,6 +24,7 @@ function generateSites() {
       "price": price,
       "amenities": amenities,
       "activities": activities,
+      "terrain": terrain
     });
   }
   return sites;
